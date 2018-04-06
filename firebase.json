@@ -6,10 +6,15 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [{
-    	"source": "/timestamp",
-    	"function": "app"
-    }]
+    "rewrites": [
+    	{
+	    	"source": "/about",
+	    	"destination": "about.html"
+    	},{
+	    	"source": "**",
+	    	"function": "index.html"
+    	}
+	]
   },
   "functions": {
     "predeploy": [
