@@ -1,0 +1,159 @@
+/*@import url('https://fonts.googleapis.com/css?family=Indie+Flower');*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #f0f1f5;
+  font-family: 'Open Sans', sans-serif;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='653' height='78.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23ededed' stroke-width='5.1' %3E%3Cpath d='M-500%2C75c0%2C0%2C125-30%2C250-30S0%2C75%2C0%2C75s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C45c0%2C0%2C125-30%2C250-30S0%2C45%2C0%2C45s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C105c0%2C0%2C125-30%2C250-30S0%2C105%2C0%2C105s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C15c0%2C0%2C125-30%2C250-30S0%2C15%2C0%2C15s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500-15c0%2C0%2C125-30%2C250-30S0-15%2C0-15s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C135c0%2C0%2C125-30%2C250-30S0%2C135%2C0%2C135s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+header strong{
+    font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+}
+
+#self {
+    height: 156px;
+    width: 100%;
+    overflow: hidden;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-bottom: 1px solid #777;
+}
+.users-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 156px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+}
+.stack {
+	background-color: #fff;
+    -webkit-box-shadow: 0 1px 16px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 1px 16px rgba(0,0,0,.1);
+    box-shadow: 0 1px 16px rgba(0,0,0,.1);
+}
+.user-card, .self-card {
+	padding: 35px 20px 25px 20px;
+}
+.user-card {
+	border-bottom: 2px dashed #DDD;
+}
+.animal {
+	height: 80px;
+	margin-right: 20px;
+}
+.user-card p, .self-card p {
+	font-size: 1.5rem;
+}
+.you-are {
+	/*position: absolute;*/
+	font-size: 1rem;
+}
+.ip-info {
+/*    top: 89px;
+    left: 135px;	
+    position: absolute;*/
+	font-size: 1rem;
+	font-weight: lighter;
+}
+#empty-alert {
+	display: none;
+    margin: 0 15px;
+    z-index: 1000;
+}
+
+#download-feed img{
+    height: 40px;
+    margin-right: 5px;
+}
+.download-card {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.download-card:last-child{
+    border-bottom: none;
+}
+.download-card button, .download-card a{
+    margin-top: 15px;
+    margin-right: 5px;
+}
+#animal-img{
+    display: inline-block;
+}
+#animal {
+    line-height: 2rem;
+}
+.self-card {
+    display: flex;
+    justify-content: flex-start;
+}
+#self-info{
+    display: inline-block;
+}
+#self-info p, #self-info span{
+    margin-bottom: 0;
+}
+.file-list-item {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.file-list-item:hover {
+    background-color: #EEE;
+}
+.file-list-item p {
+    margin-bottom: 0px;
+}
+.file-list-item .download-icon {
+    margin-top: 5px;
+}
+.accepted, .rejected{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: .25rem;
+    /* border: 1px solid #EEE; */
+    overflow: hidden;
+    font-weight: bold;
+    padding: 1em 1em;
+    font-size: 13px;
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+}
+.accepted{
+    background-color: #d4edda;
+    color: #155724;
+}
+.rejected{
+    color: #721c24;
+    background-color: #f8d7da;
+}
+/* Small devices */
+@media (max-width: 768px) {
+    .self-card{
+        padding: 25px 5px 25px 5px;
+    }
+    .user-card{
+        padding: 25px 5px 15px 5px;
+    }
+    #self{
+        height: 130px;
+    }
+    .users-wrapper{
+        top: 130px;
+    }
+}

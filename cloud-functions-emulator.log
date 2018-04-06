@@ -1,0 +1,30 @@
+2018-04-06T18:09:14.084Z - info: User function triggered, starting execution
+2018-04-06T18:09:14.094Z - info: Execution took 10 ms, user function completed successfully
+2018-04-06T18:09:14.095Z - error: ReferenceError: Data is not defined
+    at /Users/tylerhan/plover-firebase/functions/index.js:10:21
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+2018-04-06T18:09:14.339Z - error: Function worker killed by signal: SIGTERM
+2018-04-06T18:09:33.650Z - info: User function triggered, starting execution
+2018-04-06T18:09:33.661Z - info: Execution took 13 ms, user function completed successfully
+2018-04-06T18:09:33.664Z - error: TypeError: path must be absolute or specify root to res.sendFile
+    at ServerResponse.sendFile (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/response.js:421:11)
+    at /Users/tylerhan/plover-firebase/functions/index.js:10:9
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/middleware/init.js:40:5)
+2018-04-06T18:09:40.625Z - info: Worker for app closed due to file changes.
+2018-04-06T18:09:42.098Z - info: User function triggered, starting execution
+2018-04-06T18:09:42.108Z - info: Execution took 12 ms, user function completed successfully
