@@ -1,7 +1,20 @@
-var socket = io();
 var self_id = null;
 var $feed = $("#feed"),
 	$empty_alert = $("#empty-alert");
+
+firebase.auth().signInAnonymously();
+
+var database = firebase.database();
+
+$.get('http://ip-api.com/json/?fields=lat,lon', function (res) {
+    $.get('/room/' + res.lat + '/' + res.lon, function (res){
+        alert("ok");
+    });
+}).fail(function(){
+    $("#adblock-modal").modal({backdrop: 'static', keyboard: false});
+});
+
+// database.ref().
 
 // detect if mobile device
 function getMobileOperatingSystem() {
@@ -148,31 +161,10 @@ $(document).on('click', '.file-list-item', function (e) {
         $("#download-modal").modal('hide');
     }
 
-    socket.emit("accept", {sender: sender, receiver: self_id, hashes: [{name: name, hash: hash}]});
+    // socket.emit("accept", {sender: sender, receiver: self_id, hashes: [{name: name, hash: hash}]});
 
     return false;
 });
-
-// Arguments :
-//  verb : 'GET'|'POST'
-//  target : an optional opening target (a name, or "_blank"), defaults to "_self"
-// open = function(verb, url, data, target) {
-//   var form = document.createElement("form");
-//   form.action = url;
-//   form.method = verb;
-//   form.target = target || "_self";
-//   if (data) {
-//     for (var key in data) {
-//       var input = document.createElement("textarea");
-//       input.name = key;
-//       input.value = typeof data[key] === "object" ? JSON.stringify(data[key]) : data[key];
-//       form.appendChild(input);
-//     }
-//   }
-//   form.style.display = 'none';
-//   document.body.appendChild(form);
-//   form.submit();
-// };
 
 function Download(url) {
     document.getElementById('my_iframe').src = url;
@@ -212,7 +204,7 @@ $(document).on('click', '.download', function (e) {
         $("#download-modal").modal('hide');
     }
 
-    socket.emit("accept", {sender: sender, receiver: self_id, hashes: hashes});
+    // socket.emit("accept", {sender: sender, receiver: self_id, hashes: hashes});
 
     return false;
 });
@@ -236,7 +228,7 @@ $(document).on('click', '.reject', function (e) {
         $("#download-modal").modal('hide');
     }
 
-    socket.emit("reject", {sender: sender, receiver: self_id, hashes: hashes});
+    // socket.emit("reject", {sender: sender, receiver: self_id, hashes: hashes});
 
     return false;
 });
@@ -257,86 +249,88 @@ function options(receiver_id){
     };
 }
 
-socket.on('connect', function() {
-	$.get('http://ip-api.com/json/?fields=lat,lon', function (res) {
-		socket.emit('init', [res.lat, res.lon]);
-    }).fail(function(){
-        $("#adblock-modal").modal({backdrop: 'static', keyboard: false});
-    });
 
-    // when you get your own alias info
-	socket.on('alias', function(data) {
-		self_id = data.id;
-	  	// $("#self").empty().append(selfCard(data.alias));
-	  	$("#animal").html(data.alias);
-	  	$('#ip').html(data.room_name);
-	  	$("#animal-img").attr('src','/img/animals/' + data.alias + '.svg');
-	});
 
-	// when a new user joins, get info
-	socket.on('joined', function(user) {
-		if(!userExists(user.id)){
-			addUser(user.id, user.alias);
-		}
-	});
+// socket.on('connect', function() {
+// 	$.get('http://ip-api.com/json/?fields=lat,lon', function (res) {
+// 		socket.emit('init', [res.lat, res.lon]);
+//     }).fail(function(){
+//         $("#adblock-modal").modal({backdrop: 'static', keyboard: false});
+//     });
 
-	// whenever someone disconnects, remove them
-	socket.on('disconnected', function(user) {
-		// tell the server to drop this user from send/receive dict
+//     // when you get your own alias info
+// 	socket.on('alias', function(data) {
+// 		self_id = data.id;
+// 	  	// $("#self").empty().append(selfCard(data.alias));
+// 	  	$("#animal").html(data.alias);
+// 	  	$('#ip').html(data.room_name);
+// 	  	$("#animal-img").attr('src','/img/animals/' + data.alias + '.svg');
+// 	});
 
-		// you can also make the card slide up for extra fanciness
-		removeUser(user);
-	});
+// 	// when a new user joins, get info
+// 	socket.on('joined', function(user) {
+// 		if(!userExists(user.id)){
+// 			addUser(user.id, user.alias);
+// 		}
+// 	});
 
-	// Get the information of all connected clients on joining
-	socket.on('connected', function(data) {
-		$feed.empty();
-	   	data.connections.forEach(function(user){
-	   		addUser(user.id, user.alias);
-	   	});
-	   	checkUsers();
-	});
+// 	// whenever someone disconnects, remove them
+// 	socket.on('disconnected', function(user) {
+// 		// tell the server to drop this user from send/receive dict
 
-	socket.on('file', function(data){
-		console.log(data);
-		$("#download-feed").prepend(download_card(data));
-        $("#download-modal").modal('show');
-	});
+// 		// you can also make the card slide up for extra fanciness
+// 		removeUser(user);
+// 	});
 
-	socket.on('accept', function(data){
-		var receiver = data.receiver;
-		$card = $('.user-card[data-id="' + receiver + '"]');
-        var dropzone = Dropzone.forElement('.user-card[data-id="' + receiver + '"]');
-        data.hashes.forEach(function(file){
-        	$(".dz-filename").each(function(){
-        		if($(this).children("span").html() == file.name){
-        			$alert = $("<div class='accepted'>Accepted " + file.name + "</div>");
-        			$alert.insertAfter($(this).parent().parent()).delay(6000).slideUp("normal", function() { $(this).remove(); } );
-        			return;
-        		}
-        	});
-        	dropzone.removeFile(dropzone.getFileByName(file.name));
-        });
-        // $alert = $("<div class='alert alert-success' role='alert'>Accepted Files</div>");
-        // $alert.appendTo($card.children(".message-container")).delay(6000).slideUp("normal", function() { $(this).remove(); } );
-	});
+// 	// Get the information of all connected clients on joining
+// 	socket.on('connected', function(data) {
+// 		$feed.empty();
+// 	   	data.connections.forEach(function(user){
+// 	   		addUser(user.id, user.alias);
+// 	   	});
+// 	   	checkUsers();
+// 	});
 
-	socket.on('reject', function(data){
-		var receiver = data.receiver;
-		$card = $('.user-card[data-id="' + receiver + '"]');
-        var dropzone = Dropzone.forElement('.user-card[data-id="' + receiver + '"]');
-        // dropzone.removeAllFiles(true);
-        data.hashes.forEach(function(file){
-        	$(".dz-filename").each(function(){
-        		if($(this).children("span").html() == file.name){
-        			$alert = $("<div class='rejected'>Rejected " + file.name + "</div>");
-        			$alert.insertAfter($(this).parent().parent()).delay(6000).slideUp("normal", function() { $(this).remove(); } );
-        			return;
-        		}
-        	});
-        	dropzone.removeFile(dropzone.getFileByName(file.name));
-        });
-        // $alert = $("<div class='alert alert-danger' role='alert'>Rejected Files</div>");
-        // $alert.appendTo($card.children(".message-container")).delay(6000).slideUp("normal", function() { $(this).remove(); } );
-	});
-});
+// 	socket.on('file', function(data){
+// 		console.log(data);
+// 		$("#download-feed").prepend(download_card(data));
+//         $("#download-modal").modal('show');
+// 	});
+
+// 	socket.on('accept', function(data){
+// 		var receiver = data.receiver;
+// 		$card = $('.user-card[data-id="' + receiver + '"]');
+//         var dropzone = Dropzone.forElement('.user-card[data-id="' + receiver + '"]');
+//         data.hashes.forEach(function(file){
+//         	$(".dz-filename").each(function(){
+//         		if($(this).children("span").html() == file.name){
+//         			$alert = $("<div class='accepted'>Accepted " + file.name + "</div>");
+//         			$alert.insertAfter($(this).parent().parent()).delay(6000).slideUp("normal", function() { $(this).remove(); } );
+//         			return;
+//         		}
+//         	});
+//         	dropzone.removeFile(dropzone.getFileByName(file.name));
+//         });
+//         // $alert = $("<div class='alert alert-success' role='alert'>Accepted Files</div>");
+//         // $alert.appendTo($card.children(".message-container")).delay(6000).slideUp("normal", function() { $(this).remove(); } );
+// 	});
+
+// 	socket.on('reject', function(data){
+// 		var receiver = data.receiver;
+// 		$card = $('.user-card[data-id="' + receiver + '"]');
+//         var dropzone = Dropzone.forElement('.user-card[data-id="' + receiver + '"]');
+//         // dropzone.removeAllFiles(true);
+//         data.hashes.forEach(function(file){
+//         	$(".dz-filename").each(function(){
+//         		if($(this).children("span").html() == file.name){
+//         			$alert = $("<div class='rejected'>Rejected " + file.name + "</div>");
+//         			$alert.insertAfter($(this).parent().parent()).delay(6000).slideUp("normal", function() { $(this).remove(); } );
+//         			return;
+//         		}
+//         	});
+//         	dropzone.removeFile(dropzone.getFileByName(file.name));
+//         });
+//         // $alert = $("<div class='alert alert-danger' role='alert'>Rejected Files</div>");
+//         // $alert.appendTo($card.children(".message-container")).delay(6000).slideUp("normal", function() { $(this).remove(); } );
+// 	});
+// });

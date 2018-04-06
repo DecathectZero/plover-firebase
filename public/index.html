@@ -100,7 +100,21 @@
                 </div>
             </div>
         </div>
-        <script src="/socket.io/socket.io.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAznhw-975BReJ1iU0hblk7fo_D7ZQJRZU",
+            authDomain: "plover-86eac.firebaseapp.com",
+            databaseURL: "https://plover-86eac.firebaseio.com",
+            projectId: "plover-86eac",
+            storageBucket: "plover-86eac.appspot.com",
+            messagingSenderId: "820133773851"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <!-- <script src="/socket.io/socket.io.js"></script> -->
         <script src="/js/jquery.min.js"></script>
         <script src="/js/dropzone.js"></script>
         <script src="/js/bootstrap.min.js"></script>

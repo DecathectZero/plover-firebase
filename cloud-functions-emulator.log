@@ -30,3 +30,1942 @@
 2018-04-06T18:09:42.108Z - info: Execution took 12 ms, user function completed successfully
 2018-04-06T18:40:25.966Z - info: User function triggered, starting execution
 2018-04-06T18:40:25.975Z - info: Execution took 10 ms, user function completed successfully
+2018-04-06T20:40:09.560Z - info: User function triggered, starting execution
+2018-04-06T20:40:09.567Z - info: Execution took 8 ms, user function completed successfully
+2018-04-06T20:40:09.660Z - info: User function triggered, starting execution
+2018-04-06T20:40:09.666Z - info: Execution took 6 ms, user function completed successfully
+2018-04-06T20:40:09.703Z - info: User function triggered, starting execution
+2018-04-06T20:40:09.725Z - info: IncomingMessage {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 16384,
+     buffer: BufferList { head: null, tail: null, length: 0 },
+     length: 0,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: false,
+     endEmitted: false,
+     reading: false,
+     sync: true,
+     needReadable: false,
+     emittedReadable: false,
+     readableListening: false,
+     resumeScheduled: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: true,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 628,
+        _externalStream: [External],
+        fd: 17,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Array],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Array],
+        timeout: [Function: socketOnTimeout],
+        data: [Function: bound socketOnData],
+        error: [Function: socketOnError],
+        close: [Array],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     _bytesDispatched: 0,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _idleTimeout: 120000,
+     _idleNext: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 1002,
+     _destroyed: false,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: bound onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: bound parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _onPendingData: [Function: bound updateOutgoingData],
+        _sent100: false,
+        _expect_continue: false,
+        req: [Circular],
+        locals: {},
+        [Symbol(outHeadersKey)]: [Object] },
+     [Symbol(asyncId)]: 48,
+     [Symbol(bytesRead)]: 0,
+     [Symbol(asyncId)]: 50,
+     [Symbol(triggerId)]: 21 },
+  connection: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 628,
+        _externalStream: [External],
+        fd: 17,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Array],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Array],
+        timeout: [Function: socketOnTimeout],
+        data: [Function: bound socketOnData],
+        error: [Function: socketOnError],
+        close: [Array],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [F
+2018-04-06T20:40:09.731Z - info: unction: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     _bytesDispatched: 0,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _idleTimeout: 120000,
+     _idleNext: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 1002,
+     _destroyed: false,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: bound onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: bound parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _onPendingData: [Function: bound updateOutgoingData],
+        _sent100: false,
+        _expect_continue: false,
+        req: [Circular],
+        locals: {},
+        [Symbol(outHeadersKey)]: [Object] },
+     [Symbol(asyncId)]: 48,
+     [Symbol(bytesRead)]: 0,
+     [Symbol(asyncId)]: 50,
+     [Symbol(triggerId)]: 21 },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: false,
+  headers: 
+   { cookie: 'connect.sid=s%3AsR3TKZxymdNa_H1PvlOvgUbvd22ImOlI.zUkbToTfsbLbRps4yAU%2BXj%2Fti4GL%2B6PXO7pSGrvu8pg; PHPSESSID=cghfha79a1vlactfv98cbeldn5; io=zDPjzI4DuRRs7SUxAAAC',
+     'accept-language': 'en-US,en;q=0.9',
+     'accept-encoding': 'gzip, deflate, br',
+     referer: 'http://localhost:5000/',
+     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+     'x-requested-with': 'XMLHttpRequest',
+     accept: '*/*',
+     connection: 'close',
+     host: 'localhost:5001',
+     'cache-control': 'no-cache, no-store',
+     pragma: 'no-cache',
+     'x-original-url': '/room',
+     'x-forwarded-host': 'localhost:5000' },
+  rawHeaders: 
+   [ 'cookie',
+     'connect.sid=s%3AsR3TKZxymdNa_H1PvlOvgUbvd22ImOlI.zUkbToTfsbLbRps4yAU%2BXj%2Fti4GL%2B6PXO7pSGrvu8pg; PHPSESSID=cghfha79a1vlactfv98cbeldn5; io=zDPjzI4DuRRs7SUxAAAC',
+     'accept-language',
+     'en-US,en;q=0.9',
+     'accept-encoding',
+     'gzip, deflate, br',
+     'referer',
+     'http://localhost:5000/',
+     'user-agent',
+     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+     'x-requested-with',
+     'XMLHttpRequest',
+     'accept',
+     '*/*',
+     'connection',
+     'close',
+     'host',
+     'localhost:5001',
+     'cache-control',
+     'no-cache, no-store',
+     'pragma',
+     'no-cache',
+     'x-original-url',
+     '/room',
+     'x-forwarded-host',
+     'localhost:5000' ],
+  trailers: {},
+  rawTrailers: [],
+  upgrade: false,
+  url: '/room',
+  method: 'GET',
+  statusCode: null,
+  statusMessage: null,
+  client: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 628,
+        _externalStream: [External],
+        fd: 17,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Array],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Array],
+        timeout: [Function: socketOnTimeout],
+        data: [Function: bound socketOnData],
+        error: [Function: socketOnError],
+        close: [Array],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     _bytesDispatched: 0,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 50
+2018-04-06T20:40:09.732Z - info: 00,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _idleTimeout: 120000,
+     _idleNext: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 1002,
+     _destroyed: false,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: bound onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: bound parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _onPendingData: [Function: bound updateOutgoingData],
+        _sent100: false,
+        _expect_continue: false,
+        req: [Circular],
+        locals: {},
+        [Symbol(outHeadersKey)]: [Object] },
+     [Symbol(asyncId)]: 48,
+     [Symbol(bytesRead)]: 0,
+     [Symbol(asyncId)]: 50,
+     [Symbol(triggerId)]: 21 },
+  _consuming: false,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '',
+  originalUrl: '/room',
+  _parsedUrl: 
+   Url {
+     protocol: null,
+     slashes: null,
+     auth: null,
+     host: null,
+     port: null,
+     hostname: null,
+     hash: null,
+     search: null,
+     query: null,
+     pathname: '/room',
+     path: '/room',
+     href: '/room',
+     _raw: '/room' },
+  params: {},
+  query: {},
+  res: 
+   ServerResponse {
+     domain: null,
+     _events: { finish: [Array] },
+     _eventsCount: 1,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: false,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: true,
+     sendDate: true,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: false,
+     _headerSent: false,
+     socket: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 1002,
+        _destroyed: false,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 48,
+        [Symbol(bytesRead)]: 0,
+        [Symbol(asyncId)]: 50,
+        [Symbol(triggerId)]: 21 },
+     connection: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 1002,
+        _destroyed: false,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 48,
+        [Symbol(bytesRead)]: 0,
+        [Symbol(asyncId)]: 50,
+        [Symbol(triggerId)]: 21 },
+     _header: null,
+     _onPendingData: [Function: bound updateOutgoingData],
+     _sent100: false,
+     _expect_continue: false,
+     req: [Circular],
+     locals: {},
+     [Symbol(outHeadersKey)]: 
+      { 'x-powered-by': [Array],
+        'cache-control': [Array],
+        pragma: [Array],
+        expires: [Array] } },
+  body: {},
+  route: Route { path: '/room', stack: [ [Object] ], methods: { get: true } } }
+nonexistent
+Execution took 28 ms, user function completed successfully
+2018-04-06T20:41:10.237Z - info: User function triggered, starting execution
+2018-04-06T20:41:10.247Z - info: Execution took 10 ms, user function completed successfully
+2018-04-06T20:41:10.260Z - info: User function triggered, starting execution
+2018-04-06T20:41:10.291Z - info: IncomingMessage {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 16384,
+     buffer: BufferList { head: null, tail: null, length: 0 },
+     length: 0,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: false,
+     endEmitted: false,
+     reading: false,
+     sync: true,
+     needReadable: false,
+     emittedReadable: false,
+     readableListening: false,
+     resumeScheduled: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: true,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 676,
+        _externalStream: [External],
+        fd: 18,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Array],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Array],
+        timeout: [Function: socketOnTimeout],
+        data: [Function: bound socketOnData],
+        error: [Function: socketOnError],
+        close: [Array],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     _bytesDispatched: 0,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _idleTimeout: 120000,
+     _idleNext: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 801,
+     _destroyed: false,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: bound onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: bound parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _onPendingData: [Function: bound updateOutgoingData],
+        _sent100: false,
+        _expect_continue: false,
+        req: [Circular],
+        locals: {},
+        [Symbol(outHeadersKey)]: [Object] },
+     [Symbol(asyncId)]: 27,
+     [Symbol(bytesRead)]: 0,
+     [Symbol(asyncId)]: 29,
+     [Symbol(triggerId)]: 21 },
+  connection: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 676,
+        _externalStream: [External],
+        fd: 18,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Array],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Array],
+        timeout: [Function: socketOnTimeout],
+        data: [Function: bound socketOnData],
+        error: [Function: socketOnError],
+        close: [Array],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Fu
+2018-04-06T20:41:10.300Z - info: nction: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     _bytesDispatched: 0,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _idleTimeout: 120000,
+     _idleNext: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 801,
+     _destroyed: false,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: bound onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: bound parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _onPendingData: [Function: bound updateOutgoingData],
+        _sent100: false,
+        _expect_continue: false,
+        req: [Circular],
+        locals: {},
+        [Symbol(outHeadersKey)]: [Object] },
+     [Symbol(asyncId)]: 27,
+     [Symbol(bytesRead)]: 0,
+     [Symbol(asyncId)]: 29,
+     [Symbol(triggerId)]: 21 },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: false,
+  headers: 
+   { cookie: 'connect.sid=s%3AsR3TKZxymdNa_H1PvlOvgUbvd22ImOlI.zUkbToTfsbLbRps4yAU%2BXj%2Fti4GL%2B6PXO7pSGrvu8pg; PHPSESSID=cghfha79a1vlactfv98cbeldn5; io=zDPjzI4DuRRs7SUxAAAC',
+     'accept-language': 'en-US,en;q=0.9',
+     'accept-encoding': 'gzip, deflate, br',
+     referer: 'http://localhost:5000/',
+     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+     'x-requested-with': 'XMLHttpRequest',
+     accept: '*/*',
+     connection: 'close',
+     host: 'localhost:5001',
+     'cache-control': 'no-cache, no-store',
+     pragma: 'no-cache',
+     'x-original-url': '/room?lat=43.6656&lon=-79.383',
+     'x-forwarded-host': 'localhost:5000' },
+  rawHeaders: 
+   [ 'cookie',
+     'connect.sid=s%3AsR3TKZxymdNa_H1PvlOvgUbvd22ImOlI.zUkbToTfsbLbRps4yAU%2BXj%2Fti4GL%2B6PXO7pSGrvu8pg; PHPSESSID=cghfha79a1vlactfv98cbeldn5; io=zDPjzI4DuRRs7SUxAAAC',
+     'accept-language',
+     'en-US,en;q=0.9',
+     'accept-encoding',
+     'gzip, deflate, br',
+     'referer',
+     'http://localhost:5000/',
+     'user-agent',
+     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+     'x-requested-with',
+     'XMLHttpRequest',
+     'accept',
+     '*/*',
+     'connection',
+     'close',
+     'host',
+     'localhost:5001',
+     'cache-control',
+     'no-cache, no-store',
+     'pragma',
+     'no-cache',
+     'x-original-url',
+     '/room?lat=43.6656&lon=-79.383',
+     'x-forwarded-host',
+     'localhost:5000' ],
+  trailers: {},
+  rawTrailers: [],
+  upgrade: false,
+  url: '/room?lat=43.6656&lon=-79.383',
+  method: 'GET',
+  statusCode: null,
+  statusMessage: null,
+  client: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 676,
+        _externalStream: [External],
+        fd: 18,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Array],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Array],
+        timeout: [Function: socketOnTimeout],
+        data: [Function: bound socketOnData],
+        error: [Function: socketOnError],
+        close: [Array],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     _bytesDispatched: 0,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllow
+2018-04-06T20:41:10.307Z - info: HalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 1,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        _pendingResponseData: 0,
+        maxHeadersCount: null,
+        _connectionKey: '4:127.0.0.1:0',
+        [Symbol(asyncId)]: 21 },
+     _idleTimeout: 120000,
+     _idleNext: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Circular],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 801,
+     _destroyed: false,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: bound onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: bound parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _onPendingData: [Function: bound updateOutgoingData],
+        _sent100: false,
+        _expect_continue: false,
+        req: [Circular],
+        locals: {},
+        [Symbol(outHeadersKey)]: [Object] },
+     [Symbol(asyncId)]: 27,
+     [Symbol(bytesRead)]: 0,
+     [Symbol(asyncId)]: 29,
+     [Symbol(triggerId)]: 21 },
+  _consuming: false,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '',
+  originalUrl: '/room?lat=43.6656&lon=-79.383',
+  _parsedUrl: 
+   Url {
+     protocol: null,
+     slashes: null,
+     auth: null,
+     host: null,
+     port: null,
+     hostname: null,
+     hash: null,
+     search: '?lat=43.6656&lon=-79.383',
+     query: 'lat=43.6656&lon=-79.383',
+     pathname: '/room',
+     path: '/room?lat=43.6656&lon=-79.383',
+     href: '/room?lat=43.6656&lon=-79.383',
+     _raw: '/room?lat=43.6656&lon=-79.383' },
+  params: {},
+  query: { lat: '43.6656', lon: '-79.383' },
+  res: 
+   ServerResponse {
+     domain: null,
+     _events: { finish: [Array] },
+     _eventsCount: 1,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: false,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: true,
+     sendDate: true,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: false,
+     _headerSent: false,
+     socket: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 801,
+        _destroyed: false,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 27,
+        [Symbol(bytesRead)]: 0,
+        [Symbol(asyncId)]: 29,
+        [Symbol(triggerId)]: 21 },
+     connection: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 801,
+        _destroyed: false,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 27,
+        [Symbol(bytesRead)]: 0,
+        [Symbol(asyncId)]: 29,
+        [Symbol(triggerId)]: 21 },
+     _header: null,
+     _onPendingData: [Function: bound updateOutgoingData],
+     _sent100: false,
+     _expect_continue: false,
+     req: [Circular],
+     locals: {},
+     [Symbol(outHeadersKey)]: 
+      { 'x-powered-by': [Array],
+        'cache-control': [Array],
+        pragma: [Array],
+        expires: [Array] } },
+  body: {},
+  route: Route { path: '/room', stack: [ [Object] ], methods: { get: true } } }
+2018-04-06T20:41:10.307Z - info: nonexistent
+Execution took 37 ms, user function completed successfully
+2018-04-06T20:41:10.358Z - info: User function triggered, starting execution
+2018-04-06T20:41:10.366Z - info: Execution took 9 ms, user function completed successfully
+2018-04-06T20:42:46.643Z - info: Worker for app closed due to file changes.
+2018-04-06T20:42:46.643Z - info: Worker for app closed due to file changes.
+2018-04-06T20:42:46.643Z - info: Worker for app closed due to file changes.
+2018-04-06T20:42:46.643Z - info: Worker for app closed due to file changes.
+2018-04-06T20:44:00.314Z - info: User function triggered, starting execution
+2018-04-06T20:44:00.322Z - info: Execution took 8 ms, user function completed successfully
+2018-04-06T20:44:00.341Z - info: User function triggered, starting execution
+2018-04-06T20:44:00.348Z - info: Execution took 8 ms, user function completed successfully
+2018-04-06T20:44:00.374Z - info: User function triggered, starting execution
+2018-04-06T20:44:00.383Z - info: Execution took 10 ms, user function completed successfully
+2018-04-06T20:44:00.390Z - error: TypeError: Cannot read property 'lon' of undefined
+    at /Users/tylerhan/plover-firebase/functions/index.js:26:49
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:281:22
+    at param (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:354:14)
+    at param (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:410:3)
+2018-04-06T20:44:57.680Z - info: Worker for app closed due to file changes.
+2018-04-06T20:44:57.680Z - info: Worker for app closed due to file changes.
+2018-04-06T20:44:57.680Z - info: Worker for app closed due to file changes.
+2018-04-06T20:45:00.814Z - info: User function triggered, starting execution
+2018-04-06T20:45:00.823Z - info: Execution took 8 ms, user function completed successfully
+2018-04-06T20:45:00.865Z - info: User function triggered, starting execution
+2018-04-06T20:45:00.873Z - info: Execution took 10 ms, user function completed successfully
+2018-04-06T20:45:00.939Z - info: User function triggered, starting execution
+2018-04-06T20:45:00.949Z - info: Execution took 10 ms, user function completed successfully
+2018-04-06T20:45:00.958Z - error: TypeError: Cannot read property 'lon' of undefined
+    at /Users/tylerhan/plover-firebase/functions/index.js:26:47
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+2018-04-06T20:45:04.089Z - info: Worker for app closed due to file changes.
+2018-04-06T20:45:04.090Z - info: Worker for app closed due to file changes.
+2018-04-06T20:45:12.910Z - info: User function triggered, starting execution
+2018-04-06T20:45:12.920Z - info: Execution took 9 ms, user function completed successfully
+2018-04-06T20:45:12.970Z - info: User function triggered, starting execution
+2018-04-06T20:45:12.979Z - info: Execution took 10 ms, user function completed successfully
+2018-04-06T20:45:13.064Z - info: User function triggered, starting execution
+2018-04-06T20:45:13.070Z - info: Execution took 6 ms, user function completed successfully
+2018-04-06T20:45:13.070Z - error: TypeError: Cannot read property 'lon' of undefined
+    at /Users/tylerhan/plover-firebase/functions/index.js:26:47
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+2018-04-06T20:45:41.291Z - info: Worker for app closed due to file changes.
+2018-04-06T20:45:41.292Z - info: Worker for app closed due to file changes.
+2018-04-06T20:45:41.316Z - error: Function worker killed by signal: SIGTERM
+2018-04-06T20:45:50.791Z - info: User function triggered, starting execution
+2018-04-06T20:45:50.798Z - info: Execution took 8 ms, user function completed successfully
+2018-04-06T20:45:50.865Z - info: User function triggered, starting execution
+2018-04-06T20:45:50.874Z - info: Execution took 8 ms, user function completed successfully
+2018-04-06T20:45:50.878Z - info: User function triggered, starting execution
+2018-04-06T20:45:50.880Z - info: 43.6656:-79.383
+2018-04-06T20:45:50.889Z - info: Execution took 9 ms, user function completed successfully
+2018-04-06T20:45:50.892Z - error: Error: Reference.child failed: First argument was an invalid path = "room_lat_lon/room_name/43.6656:-79.383". Paths must be non-empty strings and can't contain ".", "#", "$", "[", or "]"
+    at Object.exports.validatePathString (/Users/tylerhan/plover-firebase/functions/node_modules/@firebase/database/dist/cjs/src/core/util/validation.js:282:15)
+    at Object.exports.validateRootPathString (/Users/tylerhan/plover-firebase/functions/node_modules/@firebase/database/dist/cjs/src/core/util/validation.js:293:13)
+    at Reference.child (/Users/tylerhan/plover-firebase/functions/node_modules/@firebase/database/dist/cjs/src/api/Reference.js:72:30)
+    at Database.ref (/Users/tylerhan/plover-firebase/functions/node_modules/@firebase/database/dist/cjs/src/api/Database.js:58:48)
+    at getRoom (/Users/tylerhan/plover-firebase/functions/index.js:12:23)
+    at /Users/tylerhan/plover-firebase/functions/index.js:28:2
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+2018-04-06T20:46:24.827Z - info: Worker for app closed due to file changes.
+2018-04-06T20:46:24.828Z - info: Worker for app closed due to file changes.
+2018-04-06T20:46:24.885Z - error: Function worker killed by signal: SIGTERM
+2018-04-06T20:46:30.747Z - info: User function triggered, starting execution
+2018-04-06T20:46:30.751Z - info: 43.6656:-79.383
+2018-04-06T20:46:30.759Z - info: Execution took 15 ms, user function completed successfully
+2018-04-06T20:46:30.764Z - error: Error: Reference.child failed: First argument was an invalid path = "room_lat_lon/room_name/43.6656:-79.383". Paths must be non-empty strings and can't contain ".", "#", "$", "[", or "]"
+    at Object.exports.validatePathString (/Users/tylerhan/plover-firebase/functions/node_modules/@firebase/database/dist/cjs/src/core/util/validation.js:282:15)
+    at Object.exports.validateRootPathString (/Users/tylerhan/plover-firebase/functions/node_modules/@firebase/database/dist/cjs/src/core/util/validation.js:293:13)
+    at Reference.child (/Users/tylerhan/plover-firebase/functions/node_modules/@firebase/database/dist/cjs/src/api/Reference.js:72:30)
+    at Database.ref (/Users/tylerhan/plover-firebase/functions/node_modules/@firebase/database/dist/cjs/src/api/Database.js:58:48)
+    at getRoom (/Users/tylerhan/plover-firebase/functions/index.js:12:23)
+    at /Users/tylerhan/plover-firebase/functions/index.js:28:2
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/tylerhan/plover-firebase/functions/node_modules/express/lib/router/layer.js:95:5)
+2018-04-06T20:46:30.810Z - info: User function triggered, starting execution
+2018-04-06T20:46:30.819Z - info: Execution took 9 ms, user function completed successfully
+2018-04-06T20:46:30.835Z - info: User function triggered, starting execution
+2018-04-06T20:46:30.842Z - info: Execution took 7 ms, user function completed successfully
+2018-04-06T20:47:17.264Z - info: Worker for app closed due to file changes.
+2018-04-06T20:47:17.264Z - info: Worker for app closed due to file changes.
+2018-04-06T20:47:17.309Z - error: Function worker killed by signal: SIGTERM
+2018-04-06T20:48:06.051Z - error: /Users/tylerhan/plover-firebase/functions/index.js:6
+const firebaseApp = firebase.initializeApp(
+^^^^^
+
+SyntaxError: Unexpected token const
+    at createScript (vm.js:74:10)
+    at Object.runInThisContext (vm.js:116:10)
+    at Module._compile (module.js:533:28)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:503:32)
+    at tryModuleLoad (module.js:466:12)
+    at Function.Module._load (module.js:458:3)
+    at Module.require (module.js:513:17)
+    at require (internal/module.js:11:18)
+    at process.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:76:28)
+2018-04-06T20:48:06.078Z - error: Function worker crashed with exit code: 1
+2018-04-06T20:48:06.083Z - error: /Users/tylerhan/plover-firebase/functions/index.js:6
+const firebaseApp = firebase.initializeApp(
+^^^^^
+
+SyntaxError: Unexpected token const
+    at createScript (vm.js:74:10)
+    at Object.runInThisContext (vm.js:116:10)
+    at Module._compile (module.js:533:28)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:503:32)
+    at tryModuleLoad (module.js:466:12)
+    at Function.Module._load (module.js:458:3)
+    at Module.require (module.js:513:17)
+    at require (internal/module.js:11:18)
+    at process.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:76:28)
+2018-04-06T20:48:06.103Z - error: Function worker crashed with exit code: 1
+2018-04-06T20:48:06.126Z - error: /Users/tylerhan/plover-firebase/functions/index.js:6
+const firebaseApp = firebase.initializeApp(
+^^^^^
+
+SyntaxError: Unexpected token const
+    at createScript (vm.js:74:10)
+    at Object.runInThisContext (vm.js:116:10)
+    at Module._compile (module.js:533:28)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:503:32)
+    at tryModuleLoad (module.js:466:12)
+    at Function.Module._load (module.js:458:3)
+    at Module.require (module.js:513:17)
+    at require (internal/module.js:11:18)
+    at process.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:76:28)
+2018-04-06T20:48:06.142Z - error: Function worker crashed with exit code: 1
+2018-04-06T20:48:21.716Z - info: User function triggered, starting execution
+2018-04-06T20:48:21.724Z - info: Execution took 9 ms, user function completed successfully
+2018-04-06T20:48:21.839Z - info: User function triggered, starting execution
+2018-04-06T20:48:21.841Z - info: 43.6656:-79.383
+2018-04-06T20:48:21.842Z - info: nonexistent
+2018-04-06T20:48:21.848Z - info: Execution took 10 ms, user function completed successfully
+2018-04-06T20:48:21.852Z - info: User function triggered, starting execution
+2018-04-06T20:48:21.867Z - info: Execution took 16 ms, user function completed successfully
+2018-04-06T20:50:20.475Z - info: Worker for app closed due to file changes.
+2018-04-06T20:50:20.477Z - info: Worker for app closed due to file changes.
+2018-04-06T20:54:51.399Z - error: /Users/tylerhan/plover-firebase/functions/index.js:12
+const nature = JSON.parse(fs.readFileSync('./nature.json', 'utf8'));
+                          ^
+
+ReferenceError: fs is not defined
+    at Object.<anonymous> (/Users/tylerhan/plover-firebase/functions/index.js:12:27)
+    at Module._compile (module.js:569:30)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:503:32)
+    at tryModuleLoad (module.js:466:12)
+    at Function.Module._load (module.js:458:3)
+    at Module.require (module.js:513:17)
+    at require (internal/module.js:11:18)
+    at process.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:76:28)
+    at emitTwo (events.js:125:13)
+2018-04-06T20:54:51.427Z - error: Function worker crashed with exit code: 1
+2018-04-06T20:54:51.440Z - error: /Users/tylerhan/plover-firebase/functions/index.js:12
+const nature = JSON.parse(fs.readFileSync('./nature.json', 'utf8'));
+                          ^
+
+ReferenceError: fs is not defined
+    at Object.<anonymous> (/Users/tylerhan/plover-firebase/functions/index.js:12:27)
+    at Module._compile (module.js:569:30)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:503:32)
+    at tryModuleLoad (module.js:466:12)
+    at Function.Module._load (module.js:458:3)
+    at Module.require (module.js:513:17)
+    at require (internal/module.js:11:18)
+    at process.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:76:28)
+    at emitTwo (events.js:125:13)
+2018-04-06T20:54:51.460Z - error: Function worker crashed with exit code: 1
+2018-04-06T20:54:51.501Z - error: /Users/tylerhan/plover-firebase/functions/index.js:12
+const nature = JSON.parse(fs.readFileSync('./nature.json', 'utf8'));
+                          ^
+
+ReferenceError: fs is not defined
+    at Object.<anonymous> (/Users/tylerhan/plover-firebase/functions/index.js:12:27)
+    at Module._compile (module.js:569:30)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:503:32)
+    at tryModuleLoad (module.js:466:12)
+    at Function.Module._load (module.js:458:3)
+    at Module.require (module.js:513:17)
+    at require (internal/module.js:11:18)
+    at process.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:76:28)
+    at emitTwo (events.js:125:13)
+2018-04-06T20:54:51.524Z - error: Function worker crashed with exit code: 1
+2018-04-06T20:54:53.602Z - error: /Users/tylerhan/plover-firebase/functions/index.js:12
+const nature = JSON.parse(fs.readFileSync('./nature.json', 'utf8'));
+                          ^
+
+ReferenceError: fs is not defined
+    at Object.<anonymous> (/Users/tylerhan/plover-firebase/functions/index.js:12:27)
+    at Module._compile (module.js:569:30)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:503:32)
+    at tryModuleLoad (module.js:466:12)
+    at Function.Module._load (module.js:458:3)
+    at Module.require (module.js:513:17)
+    at require (internal/module.js:11:18)
+    at process.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:76:28)
+    at emitTwo (events.js:125:13)
+2018-04-06T20:54:53.626Z - error: Function worker crashed with exit code: 1
+2018-04-06T20:54:53.631Z - error: /Users/tylerhan/plover-firebase/functions/index.js:12
+const nature = JSON.parse(fs.readFileSync('./nature.json', 'utf8'));
+                          ^
+
+ReferenceError: fs is not defined
+    at Object.<anonymous> (/Users/tylerhan/plover-firebase/functions/index.js:12:27)
+    at Module._compile (module.js:569:30)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:503:32)
+    at tryModuleLoad (module.js:466:12)
+    at Function.Module._load (module.js:458:3)
+    at Module.require (module.js:513:17)
+    at require (internal/module.js:11:18)
+    at process.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:76:28)
+    at emitTwo (events.js:125:13)
+2018-04-06T20:54:53.648Z - error: Function worker crashed with exit code: 1
+2018-04-06T20:54:53.663Z - error: /Users/tylerhan/plover-firebase/functions/index.js:12
+const nature = JSON.parse(fs.readFileSync('./nature.json', 'utf8'));
+                          ^
+
+ReferenceError: fs is not defined
+    at Object.<anonymous> (/Users/tylerhan/plover-firebase/functions/index.js:12:27)
+    at Module._compile (module.js:569:30)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:503:32)
+    at tryModuleLoad (module.js:466:12)
+    at Function.Module._load (module.js:458:3)
+    at Module.require (module.js:513:17)
+    at require (internal/module.js:11:18)
+    at process.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:76:28)
+    at emitTwo (events.js:125:13)
+2018-04-06T20:54:53.683Z - error: Function worker crashed with exit code: 1
+2018-04-06T20:55:33.415Z - info: User function triggered, starting execution
+2018-04-06T20:55:33.422Z - info: Execution took 7 ms, user function completed successfully
+2018-04-06T20:55:33.585Z - info: User function triggered, starting execution
+2018-04-06T20:55:33.590Z - info: Execution took 6 ms, user function completed successfully
+2018-04-06T20:55:33.619Z - info: User function triggered, starting execution
+2018-04-06T20:55:33.622Z - info: 43.6656:-79.383
+2018-04-06T20:55:33.623Z - info: existent
+2018-04-06T20:55:33.628Z - info: Execution took 10 ms, user function completed successfully

@@ -11,8 +11,11 @@
 	    	"source": "/about",
 	    	"destination": "about.html"
     	},{
-	    	"source": "**",
-	    	"function": "index.html"
+	    	"source": "/",
+	    	"destination": "index.html"
+    	},{
+    		"source": "**",
+    		"function": "app"
     	}
 	]
   },
